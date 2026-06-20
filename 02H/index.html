@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/.css" />
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h2 class="logo">TaskFlow</h2>
+
+    <button class="hamburger" id="hamburger">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+    <button id="darkBtn">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+</li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>A Smarter Way to Organize Your Workflow</h1>
+      <p>Streamline tasks, collaborate effortlessly, and boost productivity with an all-in-one platform designed for modern teams.</p>
+      <button class="btn">Get Started</button>
+    </div>
+
+    <img src="images/image2.jpeg" alt="Task management dashboard" loading="lazy">
+  </section>
+</header>
+
+<section id="features" class="section">
+  <h2>Features</h2>
+
+  <div class="features">
+    <div class="card"><img src="images/quick.png" width="80" alt="Fast task icon"><h3>Fast</h3><p>Quick task management.</p></div>
+    <div class="card"><img src="images/padlock.png" width="80" alt="Security icon"><h3>Secure</h3><p>Your data is safe.</p></div>
+    <div class="card"><img src="images/analytics (1).png" width="80" alt="Analytics icon"><h3>Analytics</h3><p>Track your progress.</p></div>
+    <div class="card"><img src="images/team.png" width="80" alt="Teamwork icon"><h3>Team Work</h3><p>Collaborate easily.</p></div>
+    <div class="card"><img src="images/cloud.png" width="80" alt="Cloud icon"><h3>Cloud</h3><p>Access anywhere.</p></div>
+    <div class="card"><img src="images/customize.png" width="80" alt="Customizable icon"><h3>Customizable</h3><p>Adjust your workflow.</p></div>
+  </div>
+</section>
+
+<section id="pricing" class="section">
+  <h2>Pricing</h2>
+
+  <div class="pricing">
+    <div class="price-card">
+      <h3>Starter</h3>
+      <h1>$9</h1>
+      <p>Basic features for individuals.</p>
+      <button class="btn">Choose</button>
+    </div>
+
+    <div class="price-card">
+      <h3>Professional</h3>
+      <h1>$29</h1>
+      <p>Best plan for teams and projects.</p>
+      <button class="btn">Choose</button>
+    </div>
+
+    <div class="price-card">
+      <h3>Enterprise</h3>
+      <h1>$99</h1>
+      <p>Advanced features for businesses.</p>
+      <button class="btn">Choose</button>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" aria-label="Name">
+    <span class="error" id="nameError"></span>
+
+    <input type="email" id="email" placeholder="Your Email" aria-label="Email">
+    <span class="error" id="emailError"></span>
+
+    <textarea id="message" placeholder="Your Message" aria-label="Message"></textarea>
+    <span class="error" id="messageError"></span>
+
+    <button type="submit" class="btn">Submit</button>
+  </form>
+</section>
+
+<section class="section">
+  <h2>Latest Blog Posts</h2>
+  <p id="loading">Loading posts...</p>
+  <p id="apiError"></p>
+  <div id="posts" class="features"></div>
+</section>
+
+<script src="js/app.js"></script>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</body>
+<footer>
+    <p>© 2026 TaskFlow. All Rights Reserved.</p>
+</footer>
+</html>
